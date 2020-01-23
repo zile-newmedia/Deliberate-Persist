@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learning</title>
+</head>
+
+<body>
+# 1.图片标签 <img src="images/img.jpeg" width= "50%"  border="5px" height="300px" title="动漫系列" />
+# border:图片的边框  px:单位（像素px） title:鼠标经过图片时显示的内容
+# <img src="……" alt="加载失败"/>   alt:当图片未能正常显示时，用于给用户的提示信息
+# 单表签；必需用属性src’；属性（如“width”等不分顺序）
+
+
+
+# 2.锚点 <a href="#锚点名">目录</a>
+# 连接方式 1.id=“锚点名”
+#         2.<a name="锚点名"></a>
+# 总：    <h3> 1 个人经历 </h3> => <h3><a href="#experience"> 1 个人经历 </a></h3>
+# 分：法一    <h5 id="experience"> 个人经历 </h5>
+#     法二    <h5><a name="experience"> 个人经历 </a></h5>
+
+
+
+# 3.块元素和行内元素
+# 3-1 <hr align="center" width="300px" size="5px" color="blue"/>
+# hr:水平线   align：水平对齐方式   center：center/left/right   width：水平线宽度   size：水平线高度
+# 3-2 <address>……</address>    放在"<body></body>"里面，能识别为地址并以斜体字显示
+# 3-3 <pre>……</pre>   预文本标签，即还原文本格式
+# 3-4 定义:粗体文本<b></b>   下划线文本<u></u>   斜体字<i></i>   加重语气字<strong></strong>   着重字<em></em>
+
+
+
+
+
+
+
+</body>
+</html>
