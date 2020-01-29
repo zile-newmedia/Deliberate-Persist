@@ -1,0 +1,36 @@
+name = 'TOM'
+age = 18
+weight = 75.5
+
+# 我的名字是x，今年x岁了，体重x公斤("%s"足够强大以至于可以输出"%d"、"%f")
+print('我的名字是%s，今年%s岁了，体重%s公斤'   %(name,age,weight))
+
+# 更简洁的方法："f-格式化字符串"（f-格式化字符串是Python3.6中新增的格式化方法）
+print(f'我的名字是{name}，今年{age}岁了')
+
+
+
+# 转义字符   \n:换行；\t:制表符（一个tab键，即四个空格的距离）
+print('hello \nworld')
+print('\t hello world')
+
+# 结束符(其中“\n”可为自己想要的结束符号)
+print('输出内容',end="\n")
+
+
+
+# 输入功能实现
+#特点：遇到input，随后即为等待用户输入；接受input存变量；input接收到的数据类型都是字符串
+password = input("请输入您的密码")
+print(f'您输入的密码是{password}')
+print((type(password)))
+print(type(int(password)))
+
+
+
+
+
+
+
+
+
