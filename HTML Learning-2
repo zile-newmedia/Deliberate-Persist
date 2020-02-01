@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        注意事项：
+            1.<ul></ul>组合的是<li></li>,其他标签不允许组合
+            2.<li></li>标签它是一个容器，可以容纳所有元素
+            3.列表是自带样式属性的
+    -->
+
+    <h4>无序列表</h4>
+    <h5>球星</h5>
+     <ul type ="disc">
+         <li>科比</li>
+         <li>詹姆斯</li>
+         <li>杜兰特</li>
+     </ul>
+    <!--
+        <ul><li>的属性type 拥有的选项
+        1.disc 默认实心圆
+        2.circle 空心圆
+        3.square 小方块
+        4.none 不显示
+    -->
+
+
+    <h4>有序列表</h4>
+    <h5>球星</h5>
+    <ol>
+        <li>科比</li>
+        <li>詹姆斯</li>
+        <li>杜兰特</li>
+    </ol>
+    <!--
+        <ol><li>的属性type 拥有的选项：
+        1:表示列表项目用数字标号（1，2，3...）
+        a:表示列表项目用小写字母标号（a,b,c...）
+        A:A,B,C...
+        i：小写罗马数字标号（i,ii,iii...）
+        I: 大写罗马数字标号（I,II,III...）
+    -->
+
+
+    <h4>自定义列表</h4>
+
+    <dl>
+        <dt>中国国家领导人</dt>
+        <dd>习近平</dd>
+        <dd>李克强</dd>
+    </dl>
+
+
+<!--
+    <table></table> 代表表格
+    <tr></tr> 代表行
+    <td></td> 代表单元格
+-->
+
+    <h4>表格基本结构</h4>
+
+    <table border="1px" width="300px">
+        <caption>表格标题</caption>
+        <tr>
+            <td>第一行第一列</td>
+            <td>第一行第二列</td>
+            <td>第一行第三列</td>
+        </tr>
+
+        <tr>
+            <td>第二行第一列</td>
+            <td>第二行第二列</td>
+            <td>第二行第三列 </td>
+        </tr>
+
+
+
+
+    </table>
+
+
+
+
+
+</body>
+</html>
