@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>表格行和列的属性</h1>
+<h3>表格是按行和列（单元格）组成的，一个表格有几行组成就要有几个行标签</h3>
+<!--
+行标签：<tr></tr>
+-->
+<h4>属性和描述</h4>
+     <ul type ="disc">
+         <li>height:行高</li>
+         <li>align：行内容的水平对齐</li>
+         <li>valign：行内容的垂直对齐</li>
+         <li>bgcolor：行的背景颜色</li>
+     </ul>
+
+<h3>同理，一个表格有几列组成就要有几个列标签，其中列标签多两个属性为"colspan"和"rowspan"</h3>
+<!--
+列标签：<td></td>
+-->
+<ul type ="disc">
+         <li>colspan：设置单元格跨列</li>
+         <li>rowspan：设置单元格跨行</li>
+     </ul>
+
+<table bgcolor="" border="10px" bordercolor="gold" width="400px" height="100px">
+
+    <caption>
+        <b>生涯得分记录</b>
+    </caption>
+    <tr height="60px" bgcolor="purple">
+        <th>姓名</th>
+        <th>号码</th>
+        <th>得分</th>
+    </tr>
+    <tr align="center" height="50px" valign="middle">
+        <th>利拉德</th>
+        <th>0</th>
+        <th>61</th>
+    </tr>
+        <tr>
+        <th>科比</th>
+        <th>8</th>
+        <th>81</th>
+    </tr>
+
+</table>
+
+
+<h1>合并单元格</h1>
+
+<table border="100px" height="300px" width="300px" bgcolor="red">
+    <tr>
+        <td colspan="2"></td>
+        <td rowspan="2"></td>
+    </tr>
+     <tr>
+        <td rowspan="2"></td>
+        <td></td>
+
+    </tr>
+     <tr>
+         <td colspan="2"></td>
+    </tr>
+</table>
+
+</body>
+</html>
