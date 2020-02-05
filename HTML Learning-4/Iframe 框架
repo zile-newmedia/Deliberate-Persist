@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iframe框架</title>
+</head>
+<body>
+
+     <iframe  src="http://baidu.com" frameborder="10" name="topIframe" width="100%" height="300px" scrolling="auto"></iframe>
+     <iframe  scr="other/menu.html" height="500px" name="leftIframe"></iframe>
+     <iframe  scr="" height="500px" width="1560px" name="rightIframe"></iframe>
