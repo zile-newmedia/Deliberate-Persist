@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左菜单</title>
+</head>
+<body>
+    <ul>
+        <li><a href="nba.html" target="rightIframe">NBA</a></li>
+        <li>科比</li>
+        <li>詹姆斯</li>
+    </ul>
+
+</body>
+</html>
