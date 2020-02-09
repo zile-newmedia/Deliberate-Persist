@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learning</title>
+</head>
+<body>
+<h2># 文本框和密码</h2>
+<h4>表单标签（控件）：input（input：1.是单标签；2.是通过type属性来更改它的形状）</h4>
+
+<h4>用户名和密码</h4>
+<p>用户名：<input type="text" name="username" value="admin"></p>
+<!--
+value="admin" ——>初始默认值
+-->
+<p>密&nbsp;&nbsp;码：<input type="password"></p>
+<!--
+表示一个空格（Non-Breaking Space）:是常用的编程和网页创建的"行不打破空间"上的程序或文档的空间
+-->
+
+<!--
+<p>标签：用于定义段落。p元素会自动在其前后创建一些空白
+-->
+
+<h5>格式</h5>
+     <ul>
+         <li>单行文本框:<xmp><input type="text">默认值是type="text"</xmp></li>
+         <li>密码框:<xmp><input type="password"></xmp></li>
+     </ul>
+
+<!--
+<xmp></xmp>:在网页显示编辑代码（终于找到你了！）
+-->
+
+<h2># 单选按钮和复选框</h2>
+<p>性别：<input type="radio"   name="sex"   checked value="男">男   <input name="sex" value="女" type="radio">女</p>
+<p>爱好：<input type="checkbox">看书 <input type="checkbox">写字 <input type="checkbox">运动  </p>
+
+
+
+<h2>#按钮组（文件上传和按钮组）</h2>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file" name="file1">
+</form>
+
+<h5>属性</h5>
+     <ul>
+         <li>name:定义控件名称</li>
+         <li>value：指定控件初始值</li>
+         <li>checked:设置控件初始状态是否被选中</li>
+     </ul>
+
+<h5>格式</h5>
+<xmp><input type="file"></xmp>
+<h5>属性(使用file类型的input时要注意以下几点)：</h5>
+ <ul>
+         <li>form表单的method属性值要为post</li>
+         <li>form要加enctype="multipart/form-data"属性，它说明了我们的文件以二进制方式传输文件，因为计算机本身最底层都是以二进制来显示、传输的</li>
+     </ul>
+<br>
+<br>
+<p>上传头像：<input type="file"></p>
+<p>隐藏域：<input type="hidden" value="123456"></p>
+<p>普通按钮：<input type="button" value="注册"></p>
+<p>提交按钮：<input type="submit" value="登录"></p>
+<p>重置按钮：<input type="reset"></p>
+<p>图像图片按钮：<input type="image" src="images/xxx.jpg" width="20px"></p>
+
+
+
+
+</body>
+</html>
