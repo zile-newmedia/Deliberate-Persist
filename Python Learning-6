@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learning</title>
+</head>
+<body>
+<h2>下拉列表</h2>
+
+<h4>select属性</h4>
+     <ul>
+         <li>name:此列表框的名字</li>
+         <li>multiple：多选，不用赋值</li>
+         <li>size：规定下拉列表中可见选项的数目</li>
+         <li>disabled：规定禁用该下拉列表</li>
+     </ul>
+
+<h4>option属性</h4>
+     <ul>
+         <li>selected:用来指定默认的选项</li>
+         <li>value：用来给<xmp>“<option>”</xmp>指定的那一个选项赋值，这个值是要传到服务器上的，服务器正是通过调用<xmp>“<select>”</xmp>区域的名字的value属性来获得该区域选中的数据项的</li>
+     </ul>
+
+<hr>
+<select name="sel">
+    <option slec>请选择省份</option>
+    <option>北京市</option>
+    <option>上海市</option>
+    <option selected value="广东省">广东省</option>
+</select>
+
+<select>
+    <option value="" seclected>广州市</option>
+    <option value="">深圳市</option>
+    <option value="">韶关市</option>
+</select>
+<br>
+
+<hr>
+<!--
+高级显示法
+-->
+
+<select name="" id="">
+   <optgroup label="广州市">
+       <option>请选择所在地区</option>
+       <option>番禺区</option>
+       <option>海珠区</option>
+       <option>天河区</option>
+   </optgroup>
+    <optgroup label="北京市">
+        <option>海淀区</option>
+        <option>朝阳区</option>
+        <option>西城区</option>
+    </optgroup>
+
+</select>
+
+</body>
+</html>
