@@ -1,0 +1,104 @@
+#随机数
+"""
+1.导出random模块：import 模块名
+2.引用random模块中的"随机整数功能"：random.randint(开始，结束)
+"""
+
+
+
+#猜拳游戏（进阶版：随机数）
+import random
+#1.出拳
+#玩家
+player =int(input('请出拳：0--石头；1--剪刀；2--布:'))
+#电脑
+computer = random.randint(0,22)
+#2.判断输赢
+#玩家获胜
+if ((player == 0)and(computer == 1)) or ((player == 1)and(computer == 2)) or ((player == 2)and(computer == 0)):
+    print('玩家获胜')
+#平局
+elif player == computer:
+    print('平局')
+else:
+    print('电脑获胜')
+
+
+
+#while的语法和体验
+"""
+while 条件：
+    条件成立重复执行的代码1
+    条件成立重复执行的代码2
+"""
+
+
+
+#输出“我最棒”一百次
+i=0
+while i< 100:
+    print("我最棒")
+    i +=1 #i=i+1
+
+
+
+# 循环应用：1-100累加
+
+"""
+1.准备做加法运算的数据 1-100 增量为1
+2.准备变量保存将来 运算的结果
+3.循环不做加法运算
+4.打印结果
+5.验证结果的正确性
+"""
+
+#准备数据
+i = 1
+#结果变量
+result = 0
+#循环
+
+while i <= 100:
+    #加法运算 前两个结果+第三个数…… --每计算一次加法则更新一次result变量值
+    result = result + 1
+    i += 1
+
+print(result)
+
+
+
+#循环应用：1-100偶数累加和方法一
+"""
+1.准备累加的数字 开始1 结束100 增量1
+2.准备保存结果的变量result
+3.循环加法运算 -- 如果是偶数才加法运算 -- 和2取余数为0
+4.输出结果
+5.验证结果
+"""
+
+i = 1
+result = 0
+
+while i <= 100:
+    #条件语句  -- if
+    if i % 2 == 0:
+        #加法运算
+        result += i
+    i += 1
+
+print(result)
+
+
+
+#循环应用：1-100偶数累加和方法二（计数器控制：让偶数累加）
+
+i = 2
+result = 0
+
+while i <= 100:
+    result += i
+    i += 2
+print(result)
+
+
+
