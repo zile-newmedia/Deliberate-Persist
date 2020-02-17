@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learning-8</title>
+</head>
+<body>
+
+<h2>表单域</h2>
+
+<h3>表单域=窗体+控件</h3>
+
+<h4>一个表单一般应该包含用户填写信息的输入框、提交按钮等，这些输入框、按钮叫做控件。表单很像容器，它能容纳各种各样的控件。</h4>
+
+<h4>表单标签的格式</h4>
+     <ul>
+         <li>name：表单提交时的名称</li>
+         <li>action：提交到的地址</li>
+         <li>method：提交方式，默认为get</li>
+     </ul>
+
+<h4>post和get的区别</h4>
+    <ol>
+        <li>数据提交方式，get把提交的数据url可以看到，post看不到</li>
+        <li>get一般用于提交少量数据，post用来提交大量数据</li>
+        <li>get最多提交1K数据，put理论上没有限制</li>
+        <li>get提交的数据在浏览器历史记录中，安全性不好</li>
+        <li>补充：get提交的速度快但不安全，post速度慢 但安全</li>
+    </ol>
+
+
+
+<form action="http://www.baidu.com" method="get/post" name="login">
+    <p>用户名：<input type="text" name="username"></p>
+    <p>密码：<input type="password" name="pwd"></p>
+    <input type="submit" value="提交">
+    <input type="reset" value="重置" >
+
+
+
+
+
+</body>
+</html>
