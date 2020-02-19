@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Learning-9</title>
+</head>
+<body>
+
+<h1>HTML5 新增类型</h1>
+
+<h2>电子邮件类型</h2>
+    电子邮件&nbsp;<input type="email">
+    <ol>
+        <li>语法：<xmp><input type="email"></xmp></li>
+        <li>功能描述：提示用户“输入E-mail”地址</li>
+        <li>注意：输入的内容中必须包含“@”且“@”后面必须有内容</li>
+    </ol>
+
+<h2>搜索类型</h2>
+    搜索&nbsp;<input type="search">
+    <ol>
+        <li>语法：<xmp><input type="search"></xmp></li>
+        <li>功能描述：提示用户"输入搜索关键字"</li>
+    </ol>
+
+<h2>URL类型</h2>
+    网站&nbsp;<input type="url">
+    <ol>
+        <li>语法：<xmp><input type="url"></xmp></li>
+        <li>功能描述：提示用户"输入web站点"</li>
+        <li>注意：输入的内容中必须包含"http://"且后面必须有内容</li>
+    </ol>
+
+<h2>颜色类型</h2>
+    颜色选择&nbsp;<input type="color">
+    <ol>
+        <li>语法：<xmp><input type="color"></xmp></li>
+        <li>功能描述：预定义的颜色拾取控件</li>
+    </ol>
+
+<h2>数字类型</h2>
+    数字&nbsp;<input type="number">
+    <ol>
+        <li>语法：<xmp><input type="number"></xmp></li>
+        <li>功能描述：提示用户"只能接受数字"</li>
+        <li>属性：min-当前域能接受的最小值  max-当前域能接受的最大值  step-决定了域所接受值递增或递减的步长，默认为1</li>
+    </ol>
+
+<h2>范围类型</h2>
+    范围&nbsp;<input type="range"  min="0"  max="100"  value="80">
+    <ol>
+        <li>语法：<xmp><input type="range"  min="0"  max="100"  value="80"></xmp></li>
+        <li>功能描述：允许用户选择一个范围内的值</li>
+        <li>属性：step-步长  value:初始值</li>
+    </ol>
+<h2>日期、周、月类型</h2>
+    日期&nbsp;<input type="date">
+    <input type="week">
+    <input type="month">
+<h4>语法：<xmp><input type="date/week/month"></xmp></h4>
+
+
+
+
+
+</body>
+</html>
