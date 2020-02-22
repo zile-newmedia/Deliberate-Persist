@@ -1,0 +1,88 @@
+# for 循环语法
+
+"""
+for 临时变量 in 序列：
+    重复执行的代码1
+    重复执行的代码2
+# 注意："临时变量"和"序列"的意思
+"""
+
+str1 = 'kobe'
+for i in str1:
+    print(i)
+
+
+
+# break退出for循环
+
+str1 = 'kobe'
+for i in str1:
+    #当某些条件成立退出循环 -- break：条件为i取到字符e
+    if i == 'e':
+        break
+    print(i)
+
+
+
+# continue退出for循环
+
+str1 = 'kobe'
+for i in str1:
+    if i == 'e':
+        print('遇到e不打印了')
+        continue
+    print(i)
+
+
+
+# while………else
+
+"""
+while条件：
+    条件成立重复执行的代码
+else：
+    循环正常结束之后要执行的代码    
+"""
+
+# 需求：道歉5遍“bb我错了”，完成之后执行“bb原谅我了”
+i = 1
+while i <= 5:
+    print('bb我错了')
+    i += 1
+else:
+    print('bb原谅我了')
+
+
+
+# while……else之break
+
+"""
+1.所谓else指的是循环正常结束之后要执行的代码，即如果是break终止循环的情况，else下方缩进的代码将不执行了
+2.因为continue是退出当前一次循环，继续下一次循环，所以该循环在continue控制下是可以正常结束的，当循环结束后，则执行了else缩进的代码
+"""
+
+# 第一种情况：道歉不真诚，不需要继续道歉了
+i = 1
+while i <= 5:
+    if i == 3:
+        print('这遍说的不真诚')
+        break
+    print('bb我错了')
+    i += 1
+else:
+    print('bb原谅我了')
+
+
+
+# 第二种情况：只是一遍不真诚，可以忍受，继续道歉吧
+i = 1
+while i <= 5:
+    if i == 3:
+       print('这遍说的不真诚')
+       i += 1
+       continue
+    print('bb我错了')
+    i += 1
+else:
+    print('bb原谅我了')
+
